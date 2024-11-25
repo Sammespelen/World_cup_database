@@ -9,3 +9,9 @@ psql --username=freecodecamp --dbname=postgres
 ./insert_data.sh
 psql --username=freecodecamp --dbname=postgres
 psql --username=freecodecamp --dbname=postgres
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+rm exit
+git remote set-url origin https://github.com/Sammespelen/World_cup_database.git
+git branch -M main
+git push -u origin main
+git add .
